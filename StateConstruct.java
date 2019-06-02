@@ -394,7 +394,7 @@ public class StateConstruct {
 	}
 	public static void main(String[] args) throws IOException {
 		// TODO 自动生成的方法存根
-		String filePath = "C:/Users/25483/Desktop/Test.txt";
+		String filePath = "F:/Input.txt";
 		DFAMap DMap = readDFA(filePath);
 		
 		int finalNum = DMap.finalSymble.size();
@@ -402,7 +402,7 @@ public class StateConstruct {
 
 		String [][] analyzeTable = stateOut(DMap);
 		
-		String printPath = "C:/Users/25483/Desktop/a.txt";
+		String printPath = "F:/OutPut.txt";
 		statePrint(analyzeTable,printPath,finalNum,notFinalNum);
 	}
 
