@@ -252,7 +252,7 @@ public class StateConstruct {
 	
 
 	/**
-	 * 将分析表输出到制定文件
+	 * 将分析表输出到指定文件
 	 * @param state
 	 * @param printPath
 	 * @throws IOException 
@@ -298,8 +298,14 @@ public class StateConstruct {
 		fw.write(line);
 		
 		for(int j = 0;j<state.length;j++) {
-			String index = String.valueOf(j);
-			String str = "    " + fillSpace(index,4) + "    " + "|";
+			String index = String.valueOf(j-1);
+			String str = null;
+			if(j == 0){
+				str = "            |";
+			}
+			else{
+				str = "    " + fillSpace(index,4) + "    " + "|";
+			}
 			
 			for ( int k = 0;k<finalNum;k++) {
 				String tmp  = " ";
