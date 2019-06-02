@@ -1,0 +1,14 @@
+[index:project0 project1 ... <identifier0,index_of_targetCluster0> <identifier1,...>]
+
+
+example: [0:S'->@E E->@aA E->@bB E->@bB <a,2> <B,1> <b,3>]
+
+
+"[" start symble
+"index" index of cluster
+":"
+"project0" project of cluster
+" " sperate symble
+"<"
+"identifier" like "a" "E"
+"]" ending symble
